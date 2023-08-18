@@ -3,12 +3,20 @@ div {
 
 }
 
+.container {
+    width: 100vw;
+    height: 100vh;
+    margin: auto;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
 
 
 #canvas { 
     display: grid;
-    width: 96vw;
-    height: 96vh;
+    width: 500px;
+    height: 500px;
     margin: auto;
   
 }
