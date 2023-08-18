@@ -5,7 +5,7 @@ div {
 
 
 
-#container { 
+#canvas { 
     display: grid;
     width: 96vw;
     height: 96vh;
