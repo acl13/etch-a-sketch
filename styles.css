@@ -51,3 +51,7 @@ h1 {
     margin: auto;
     background-color: white;
 }
+
+#newGrid {
+    padding: 4px 22px;
+}
