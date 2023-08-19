@@ -12,6 +12,7 @@ function createGrid() {
         for(let i = 0; i < grid; i++){
 
             let box = document.createElement('div');
+            box.classList.add("box");
             canvas.appendChild(box);
             console.log(size);
          }
