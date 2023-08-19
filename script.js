@@ -1,7 +1,6 @@
 console.log("Hello, world");
 
 
-
 function createGrid() {
     const size = prompt("Grid Rows/Colums (max 100)");
     if(size < 100 && size > 0){
@@ -12,10 +11,14 @@ function createGrid() {
         for(let i = 0; i < grid; i++){
 
             let box = document.createElement('div');
-            box.classList.add("box");
+            box.classList.add('box');
             canvas.appendChild(box);
+            box.addEventListener('mouseover',  function(){
+                box.classList.add('hover');
+            } );
             console.log(size);
          }
+     
     } else {
         alert("Oops! Enter a number between 1 and 100");
     }}
@@ -25,4 +28,6 @@ function createGrid() {
 
 const newGrid = document.getElementById('newGrid');
 newGrid.addEventListener('click', createGrid);
+
+
 

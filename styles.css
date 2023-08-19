@@ -8,6 +8,10 @@ div {
     background-color: rgb(252, 252, 252);
 }
 
+.hover {
+    background-color: darkgray;
+}
+
 .container {
     width: 100vw;
     height: 100vh;
