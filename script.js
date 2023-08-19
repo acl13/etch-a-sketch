@@ -5,6 +5,7 @@ function createGrid() {
     const size = prompt("Grid Rows/Colums (max 100)");
     if(size < 100 && size > 0){
         const canvas = document.getElementById('canvas');
+        canvas.innerHTML = '';
         const grid = (size * size)
         canvas.style.gridTemplateColumns = `repeat(${size}, 1fr)`
         canvas.style.gridTemplateRows = `repeat(${size}, 1fr)`
