@@ -3,6 +3,11 @@ div {
 
 }
 
+.box {
+    border: 0.25px solid rgb(234, 233, 233);
+    background-color: rgb(252, 252, 252);
+}
+
 .container {
     width: 100vw;
     height: 100vh;
