@@ -21,6 +21,10 @@ div {
     justify-content: center;
 }
 
+.content {
+    text-align: center;
+}
+
 
 #canvas { 
     display: grid;
