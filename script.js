@@ -24,7 +24,7 @@ function createGrid() {
         alert("Oops! Enter a number between 1 and 100");
     }}
     
-
+createGrid();
 
 
 const newGrid = document.getElementById('newGrid');
