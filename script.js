@@ -3,7 +3,7 @@ console.log("Hello, world");
 
 function createGrid() {
     const size = prompt("Grid Rows/Colums (max 100)");
-    if(size < 100 && size > 0){
+    if(size < 101 && size > 0){
         const canvas = document.getElementById('canvas');
         canvas.innerHTML = '';
         const grid = (size * size)
