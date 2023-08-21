@@ -3,7 +3,7 @@ console.log("Hello, world");
 const canvas = document.getElementById('canvas');
 
 
-function createGrid() {
+function createNewGrid() {
     const size = prompt("Grid Rows/Colums (max 100)");
     if(size < 101 && size > 0){
        // const canvas = document.getElementById('canvas');
@@ -42,7 +42,7 @@ createInitialGrid();
 
 
 const newGrid = document.getElementById('newGrid');
-newGrid.addEventListener('click', createGrid);
+newGrid.addEventListener('click', createNewGrid);
 
 
 
