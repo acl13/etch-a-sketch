@@ -16,9 +16,12 @@ function createNewGrid() {
             let box = document.createElement('div');
             box.classList.add('grid');
             canvas.appendChild(box);
-            box.addEventListener('mouseover',  function(){
-                box.classList.add('hover');
-            } );
+            box.addEventListener('mouseover',  function () {
+                //box.classList.add('hover');
+                let colors = ['#ff0000', '#00ff00', '#0000ff', '#ff3333', '#ffff00', '#ff6600'];
+                let randomColor = colors[(Math.floor(Math.random() * colors.length))];
+                box.style.backgroundColor = randomColor;
+           } );
             console.log(size);
          } 
     } else {
@@ -44,5 +47,10 @@ createInitialGrid();
 const newGrid = document.getElementById('newGrid');
 newGrid.addEventListener('click', createNewGrid);
 
-
+function pickColor() {
+    let colors = ['#ff0000', '#00ff00', '#0000ff', '#ff3333', '#ffff00', '#ff6600'];
+    let randomColor = colors[(Math.floor(Math.random() * colors.length))];
+    let rainbowCell = document.getElementsByClassName('grid');
+    rainbowCell.style.color = randomColor;
+}
 
