@@ -1,25 +1,13 @@
 body {
     background-color: rgb(1, 40, 15);
-  
 }
 
 div {
     border: 1px solid black;
-
 }
 
 h1 {
     font-family: 'Brush Sript MT', cursive;
-
-}
-
-.grid {
-    border: 0.25px solid rgb(234, 233, 233);
-    background-color: rgb(252, 252, 252);
-}
-
-.hover {
-    background-color: darkgray;
 }
 
 .container {
@@ -38,18 +26,26 @@ h1 {
     border: none;
 }
 
-
-.buttons {
-    padding: 20px;
-    border: none;
-}
-
 #canvas { 
     display: grid;
     width: 500px;
     height: 500px;
     margin: auto;
     background-color: white;
+}
+
+.grid {
+    border: 0.25px solid rgb(234, 233, 233);
+    background-color: rgb(252, 252, 252);
+}
+
+.hover {
+    background-color: darkgray;
+}
+
+.buttons {
+    padding: 20px;
+    border: none;
 }
 
 #newGrid {
