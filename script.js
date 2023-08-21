@@ -14,7 +14,7 @@ function createNewGrid() {
         for(let i = 0; i < grid; i++){
 
             let box = document.createElement('div');
-            box.classList.add('box');
+            box.classList.add('grid');
             canvas.appendChild(box);
             box.addEventListener('mouseover',  function(){
                 box.classList.add('hover');
@@ -30,7 +30,7 @@ function createInitialGrid (){
     canvas.style.gridTemplateRows = `repeat(16, 1fr)`
     for(let i = 0; i < 256; i++) {
         let cell = document.createElement('div');
-        cell.classList.add('box');
+        cell.classList.add('grid');
         canvas.appendChild(cell);
         cell.addEventListener('mouseover',  function(){
             cell.classList.add('hover');
